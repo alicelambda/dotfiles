@@ -1,0 +1,28 @@
+#[microphone]
+#label=
+#interval=5
+#command=~/.config/i3/scripts/microphone.sh
+
+
+[org]
+command=emacsclient --eval "(if (org-clocking-p)(org-clock-get-clock-string))" | head -n 1 | cut -c 4-
+color=#5fafd7
+interval=1
+min_width=1100
+align=center
+
+
+[spotify]
+command=dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:org.mpris.MediaPlayer2.Player string:Metadata | sed -n '/title/{n;p}' | cut -d '"' -f 2
+color=#ff1f8b
+interval=1
+
+[ip]
+command=hostname -i | awk '{print  $1 }'
+interval=5
+
+
+[time]
+command= date '+%d/%m/%Y %H:%M:%S'
+color=#83d0c9
+interval=1
