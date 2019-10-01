@@ -156,33 +156,6 @@ label-visible-padding = 2
 ;toggle-on-foreground = ${colors.primary}
 ;toggle-off-foreground = #66
 
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = 
-format-prefix-padding = 2
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.background}
-;format-prefix-underline = ${colors.secondary}
-label = %percentage%%
-label-padding = 2
-label-background = ${colors.background}
-;label-underline = ${colors.secondary}
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = 
-format-prefix-padding = 2
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.background}
-;format-prefix-underline = ${colors.tertiary-alt}
-label = %percentage_used%%
-;label-underline = ${colors.tertiary-alt}
-label-padding = 2
-label-background = ${colors.background}
-;label-underline = ${colors.secondary}
-
 [module/wlan]
 type = custom/script
 interval = 1
@@ -216,20 +189,6 @@ label-background = ${colors.background}
 #ramp-signal-4 = 
 #ramp-signal-foreground = ${colors.foreground-alt}
 
-[module/eth]
-type = internal/network
-interface = enp3s0
-interval = 3.0
-
-;format-connected-underline = #55aa55
-format-connected-prefix = 
-format-connected-padding = 2
-format-connected-foreground-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
-
-;format-disconnected-underline = ${self.format-connected-underline}
-label-disconnected = %ifname% disconnected
-label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
@@ -300,35 +259,7 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
-[module/temperature]
-type = internal/temperature
-thermal-zone = 7
-warn-temperature = 60
-interval = 1R
 
-format = <ramp> <label>
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${colors.primary}
-;format-prefix-background = ${colors.background}
-;format-prefix-foreground = ${colors.foreground}
-format-prefix-underline = ${colors.primary}
-
-label = %temperature%
-;label-underline = ${colors.primary}
-label-padding = 2
-label-background = ${colors.background}
-label-foreground = ${colors.foreground}
-label-warn = %temperature%
-label-warn-foreground = ${colors.foreground}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground}
-ramp-background = ${colors.background}
-ramp-padding = 2
 
 [module/powermenu]
 type = custom/menu
