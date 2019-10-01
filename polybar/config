@@ -186,7 +186,7 @@ label-background = ${colors.background}
 [module/wlan]
 type = custom/script
 interval = 1
-exec = "echo 'hewwow'"
+exec = "ip addr show wlp1s0 | grep -m 1 inet | awk '{print $2}' "
 format-prefix = 
 format-prefix-padding = 0
 format-prefix-background = ${colors.background}
