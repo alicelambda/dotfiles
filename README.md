@@ -1,3 +1,3 @@
-# Vaporwave Aestetic dots
+# Vaporwave aesthetic dots
 
 ![image](outrun.jpg)
