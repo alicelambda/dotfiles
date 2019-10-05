@@ -165,6 +165,7 @@ mode "resize" {
 smart_borders on
 smart_gaps on
 
+for_window [class="^.*"] border pixel 1
 #gaps outer 5
 #gaps inner 50
 bindsym $mod+r mode "resize"
