@@ -7,3 +7,5 @@ ln -sf ~/dotfiles/polybar/config ~/.config/polybar/config
 ln -sf ~/dotfiles/.xinitrc ~/.xinitrc
 ln -sf ~/dotfiles/.xResources ~/.xResources
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
+ln -sf ~/dotfiles/.config/kitty/snazzy.conf ~/.config/kitty/snazzy.conf
