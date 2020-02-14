@@ -50,8 +50,6 @@
 (tool-bar-mode -1)
 (exec-path-from-shell-initialize)
 
-;;set hook
-(add-hook 'after-save-hook 'my-after-save-actions)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -72,6 +70,9 @@
      ("e" "#+BEGIN_EXAMPLE
 ?
 #+END_EXAMPLE")
+     ("m" "\\begin{bmatrix}
+?
+\\end{bmatrix}")
      ("q" "#+BEGIN_QUOTE
 ?
 #+END_QUOTE")

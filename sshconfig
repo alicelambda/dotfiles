@@ -1,0 +1,4 @@
+Host jump
+	HostName todo.alicereuter.com
+	User ubuntu
+	IdentityFile ~/myvill/villefort.pem
